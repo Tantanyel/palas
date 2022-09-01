@@ -1,0 +1,652 @@
+@font-face {
+  font-family: crystal;
+  src: url(../fonts/crystal.ttf);
+}
+@font-face {
+  font-family: dinl;
+  src: url(../fonts/din_light.otf);
+}
+@font-face {
+  font-family: dinr;
+  src: url(../fonts/din_regular.otf);
+}
+@font-face {
+  font-family: dinm;
+  src: url(../fonts/din_medium.otf);
+}
+@font-face {
+  font-family: dinb;
+  src: url(../fonts/black.ttf);
+}
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #fff;
+}
+.loading img {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.content {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.layer {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.layer .cont {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 950px;
+  min-width: 1870px;
+  top: 0;
+  left: 0;
+}
+.layer1 .osn {
+  position: absolute;
+  width: 1300px;
+  height: 600px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+  z-index: 1;
+}
+.layer1 .osn video {
+  position: absolute;
+  width: 99%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.layer1 .osn .pag1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.layer1 .osn .man1 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 4;
+}
+.layer1 .osn .anim {
+  position: absolute;
+  top: -20%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.layer1 .cont .text {
+  position: absolute;
+  width: 450px;
+  height: 60px;
+  font-family: dinl;
+  font-size: 14px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 2;
+}
+.layer1 .cont .t1 {
+  left: 60px;
+}
+.layer1 .cont .t2 {
+  right: 60px;
+}
+.layer2 .osn {
+  position: absolute;
+  width: 1800px;
+  height: 600px;
+  top: 0;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+.layer2 .osn .pag2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.layer2 .osn .dev1 {
+  position: absolute;
+  width: 580px;
+  height: 750px;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  z-index: 4;
+}
+.layer2 .osn .styl {
+  position: absolute;
+  width: 580px;
+  height: 750px;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  z-index: 4;
+}
+.layer2 .osn .anim {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+.layer3 .img {
+  position: absolute;
+  overflow: hidden;
+}
+.layer3 .img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.layer3 .img span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 100%;
+}
+.layer3 .img1 {
+  width: 395px;
+  height: 525px;
+  top: 100px;
+  left: 200px;
+}
+.layer3 .img2 {
+  width: 720px;
+  height: 515px;
+  bottom: 120px;
+  left: 430px;
+}
+.layer3 .img3 {
+  width: 535px;
+  height: 630px;
+  top: 150px;
+  right: 200px;
+}
+.layer3 .text {
+  position: absolute;
+  padding: 10px;
+  width: 618px;
+  height: 155px;
+  top: 150px;
+  left: 750px;
+}
+.layer3 .text span {
+  display: block;
+  font-family: dinl;
+  font-size: 14px;
+  line-height: 20px;
+}
+.layer3 .text .line {
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background: #f00;
+  top: 0;
+  left: -20px;
+}
+.layer4 .osn {
+  position: absolute;
+  width: 1800px;
+  height: 600px;
+  top: 0;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+.layer4 .osn .pag3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.layer4 .osn .man2 {
+  position: absolute;
+  width: 580px;
+  height: 750px;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  z-index: 4;
+}
+.layer4 .osn .styl {
+  position: absolute;
+  width: 580px;
+  height: 750px;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  z-index: 4;
+}
+.layer4 .osn .anim {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+.layer5 .img {
+  position: absolute;
+  overflow: hidden;
+}
+.layer5 .img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.layer5 .img span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 100%;
+}
+.layer5 .img1 {
+  width: 455px;
+  height: 630px;
+  top: 100px;
+  left: 200px;
+}
+.layer5 .img2 {
+  width: 610px;
+  height: 450px;
+  bottom: 100px;
+  right: 500px;
+}
+.layer5 .img3 {
+  width: 397px;
+  height: 530px;
+  top: 150px;
+  right: 200px;
+}
+.layer5 .text {
+  position: absolute;
+  padding: 10px;
+  width: 570px;
+  height: 140px;
+  top: 150px;
+  left: 700px;
+}
+.layer5 .text span {
+  display: block;
+  font-family: dinl;
+  font-size: 14px;
+  line-height: 20px;
+}
+.layer5 .text .line {
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background: #f00;
+  top: 0;
+  left: -20px;
+}
+.layer6 .osn {
+  position: absolute;
+  width: 1800px;
+  height: 1000px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+.layer6 .osn .pag4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.layer6 .osn .poezd {
+  position: absolute;
+  width: 900px;
+  height: 750px;
+  top: 5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  z-index: 4;
+}
+.layer6 .osn .styl {
+  position: absolute;
+  width: 580px;
+  height: 750px;
+  top: 5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  z-index: 4;
+}
+.layer6 .osn .anim {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: -8%;
+  overflow: hidden;
+  z-index: 2;
+}
+.layer7 .img {
+  position: absolute;
+  overflow: hidden;
+}
+.layer7 .img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.layer7 .img span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 100%;
+}
+.layer7 .img1 {
+  width: 570px;
+  height: 425px;
+  bottom: 150px;
+  right: 300px;
+}
+.layer7 .img2 {
+  width: 465px;
+  height: 610px;
+  top: 150px;
+  left: 500px;
+}
+.layer7 .img3 {
+  width: 570px;
+  height: 365px;
+  bottom: 100px;
+  left: 200px;
+}
+.layer7 .text {
+  position: absolute;
+  padding: 10px;
+  width: 550px;
+  height: 140px;
+  top: 200px;
+  right: 300px;
+}
+.layer7 .text span {
+  display: block;
+  font-family: dinl;
+  font-size: 14px;
+  line-height: 20px;
+}
+.layer7 .text span b {
+  font-family: dinm;
+}
+.layer7 .text .line {
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background: #f00;
+  top: 0;
+  left: -20px;
+}
+.layer7 .dat1 {
+  position: absolute;
+  top: 75px;
+  left: 230px;
+  font-family: dinb;
+  font-size: 180px;
+  width: 650px;
+  overflow: hidden;
+}
+.layer7 .dat1 span {
+  display: block;
+  width: 700px;
+}
+.layer7 .dat2 {
+  position: absolute;
+  bottom: 540px;
+  right: 435px;
+  font-family: dinb;
+  font-size: 180px;
+  transform: rotate(90deg);
+}
+.layer7 .dat2 div {
+  bottom: 0;
+  position: absolute;
+  width: 450px;
+  height: 190px;
+  overflow: hidden;
+}
+.layer7 .dat2 div span {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 455px;
+}
+.layer8 {
+  position: relative;
+  height: 100px;
+  background: #000;
+}
+.footer {
+  font-size: 0;
+}
+.footer .copy {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  color: #555;
+  text-align: center;
+  font-size: 13px;
+  font-family: dinr;
+}
+.footer .copy a {
+  color: #555;
+}
+.footer .logof {
+  display: inline-block;
+  width: 150px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 100px;
+}
+.footer .blockt {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  vertical-align: top;
+  font-family: dinr;
+  width: 150px;
+  margin-top: 25px;
+}
+.footer .blockt b {
+  display: block;
+  font-family: dinm;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.footer .blockt span {
+  display: block;
+  text-transform: uppercase;
+}
+.footer .blockt a {
+  display: block;
+  font-family: dinm;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer .rightb {
+  position: absolute;
+  right: 200px;
+}
+.logo {
+  position: absolute;
+  width: 150px;
+  top: 20px;
+  left: 50px;
+  z-index: 10;
+}
+.menu {
+  position: absolute;
+  width: 440px;
+  top: 50px;
+  right: 80px;
+  z-index: 10;
+  text-align: right;
+}
+.menu span {
+  position: relative;
+  font-family: dinr;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-left: 60px;
+  padding: 5px 10px;
+  color: #000;
+}
+.menu span:before {
+  content: "";
+  position: absolute;
+  background: #000;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  transition: 0.3s;
+  z-index: -1;
+}
+.menu span.active {
+  color: #fff;
+}
+.menu span.active:before {
+  width: 100%;
+}
+.soc {
+  position: absolute;
+  bottom: 150px;
+  left: 70px;
+  z-index: 10;
+  transition: 0.3s;
+}
+.soc a {
+  display: block;
+  margin-top: 40px;
+}
+.soc.opac {
+  opacity: 0;
+}
+.timer {
+  position: absolute;
+  bottom: 200px;
+  right: 20px;
+  transform: rotate(90deg);
+  font-family: crystal;
+  color: #f00;
+  font-size: 14px;
+  text-align: right;
+  text-transform: uppercase;
+  z-index: 10;
+  transition: 0.3s;
+}
+.timer.opac {
+  opacity: 0;
+}
+.strelka {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  height: 36px;
+  text-align: center;
+  z-index: 10;
+  transition: 0.3s;
+}
+.strelka span {
+  font-family: dinr;
+  font-size: 14px;
+  display: block;
+  height: 18px;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+.strelka span.opac {
+  opacity: 0;
+}
+.strelka img {
+  animation: str 1s infinite;
+}
+.strelka.opac {
+  opacity: 0;
+}

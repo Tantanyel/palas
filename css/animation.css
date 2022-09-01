@@ -1,0 +1,151 @@
+@keyframes smoke {
+	0% {
+		background-position-x: 0%;
+		background: url(../img/smoke.svg);
+		background-size: 2200%;
+	}
+	100% {
+		background: url(../img/smoke.svg);
+		background-size: 2200%;
+		background-position-x: 100%;
+	}
+}
+
+@keyframes layer {
+	0% {
+		top: 5%;
+		opacity: 0;
+	}
+	100% {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes layer_o {
+	0% {
+		top: 0%;
+		opacity: 1;
+	}
+	100% {
+		top: -5%;
+		opacity: 0;
+	}
+}
+
+@keyframes man {
+	0% {
+		bottom: -30px;
+		opacity: 0;
+	}
+	100% {
+		bottom: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes style {
+	0% {
+		top: 20%;
+		opacity: 0;
+	}
+	100% {
+		top: 10%;
+		opacity: 1;
+	}
+}
+
+@keyframes style_t {
+	0% {
+		top: 10%;
+		opacity: 0;
+	}
+	100% {
+		top: 5%;
+		opacity: 1;
+	}
+}
+
+@keyframes train {
+	0% {
+		left: 5%;
+		top: 20%;
+		opacity: 0;
+	}
+	100% {
+		left: 0;
+		top: 5%;
+		opacity: 1;
+	}
+}
+
+@keyframes dev {
+	0% {
+		top: 30%;
+		opacity: 0;
+	}
+	100% {
+		top: 10%;
+		opacity: 1;
+	}
+}
+
+@keyframes img {
+	0% {
+		left: 0%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+@keyframes text_span {
+	0% {
+		opacity: 0;
+		margin-top: 10%
+	}
+	100% {
+		opacity: 1;
+		margin-top: 0%
+	}
+}
+
+@keyframes text_line {
+	0% {
+		top: 100%;
+		height: 0%;
+	}
+	100% {
+		top: 0;
+		height: 100%;
+	}
+}
+
+@keyframes dat {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 650px;
+	}
+}
+@keyframes dat2 {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: 190px;
+	}
+}
+
+@keyframes str {
+	0% {
+		margin-top: -5px;
+	}
+	50% {
+		margin-top: 0px;
+	}
+	100% {
+		margin-top: -5px;
+	}
+}
